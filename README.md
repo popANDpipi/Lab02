@@ -1,6 +1,7 @@
 ### Project Description
  This is a questionnaire software similar to "Wenjuan Xing". Users can scan the QR code link of the questionnaire, download the corresponding JSON file and generate the questionnaire dynamically. The download and upload of files are completed through the server, and users do not need to download a huge questionnaire database by themselves. It is also convenient to update and add the questionnaire. It only needs to meet the JSON format. This project obtains the web page link by scanning the QR code, and then downloads the corresponding file by pressing the key. The project is transferred through JSON file, and the questionnaire is generated dynamically after transformation. The questionnaire includes single choice questions, multiple choice questions, nine palace unlocking, longitude and latitude acquisition and precise time acquisition. Although it is just a simple demo, it has covered a lot of functional points and can be more convenient for function improvement and expansion. Through this project, we can fully review the knowledge about mobile application development, improve the proficiency, and exercise the ability of team cooperation. You can also see our efforts and knowledge through the prototype of this project.
-
+ ### SurveyServer URL
+  http://120.79.148.199/SurveyServer
  ### Members Introduction
  + 20171655 Qingyu Han
     **Group leader**
