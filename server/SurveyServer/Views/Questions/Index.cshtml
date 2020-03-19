@@ -1,0 +1,56 @@
+﻿@model IEnumerable<SurveyServer.Models.Question>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestionNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestionDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Survey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuestionType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Options)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Survey.SurveyID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Options)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.QuestionKey">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.QuestionKey">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.QuestionKey">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
